@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Blog</title>
+    <style>
+        .hover:hover{
+            background-color: rgb(213, 39, 236);
+        }
+    </style>
+</head>
+<body style="background-image: url('./bg.png');
+background-size: cover;">
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active hover rounded" href="index.html"
+                                >Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link active rounded" href="blog.html" style="background-color:rgb(140, 140, 235); cursor:pointer;"> Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Questions -->
+
+    <section class="pt-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold display-6 text-light">Frequently Asked Questions</h1>
+        </div>
+
+        <div class="accordion me-5 ms-5 pe-5 ps-5" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <strong>1.Difference between Local Storage & Session Storage...</strong>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <p class="fw-semibold">The difference between <span class="text-danger">Local Storage</span> and 
+                            <span class="text-danger">Session Storage</span> has to do with lifetime and scope: how long the data is saved for and who the data is accessible to. 
+                            <br> Session storage is destroyed once the user closes the browser whereas, 
+                            <br> Local storage stores data with no expiration date.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        <strong>2.Global Scope Vs Block Scope...</strong>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p class="fw-semibold">
+                            <span class="text-danger"> Global Scope: </span>
+                             The variables defined outside of any function or curly brackets are known as global variables and have global scope. Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable.
+                            <br>
+                            <span class="text-danger">Block scoped: </span> A block scoped variable means that the variable defined within a block will not be accessible from outside the block.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        <strong>3.How does work JS event loops???</strong>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p class="fw-semibold"><span class="text-danger">Event loop</span> is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks. The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task. <br>
+                            The event loop allows us to use callbacks and promises.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapsefour">
+                        <strong>4.In how many ways we can get Undefined???</strong>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingfour">
+                    <div class="accordion-body">
+                        <p class="fw-semibold"><span class="text-danger">Undefined</span> is a property of the global object. That is, it is a variable in global scope. The initial value of undefined is the primitive value undefined. <br>
+                       
+                            A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned.
+                            <br>
+                             Simply put, undefined means a variable has been declared but has not yet been assigned a value. undefined is a type by itself (undefined). Unassigned variables are initialized by JavaScript with a default value of undefined.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="text-semibold text-light text-center p-5">Copyright 2022 <b class="text-info">Anamika Sarker</b></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+</html>
